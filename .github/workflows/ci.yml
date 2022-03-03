@@ -16,7 +16,6 @@ jobs:
 
       - name: Auto green
         run: |
-          if #RANDOM -gt 8000
               git config --local user.email "Fangliding.fshxy@outlook.com"
               git config --local user.name "风扇滑翔翼"
               git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
