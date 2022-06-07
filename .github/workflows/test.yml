@@ -25,7 +25,6 @@ jobs:
               echo $i > ./begin
               git add ./README.md
               git add ./begin
-              git commit --date=$i --message='add'
               git pull --rebase
               git commit  -m "续了"
               git push
