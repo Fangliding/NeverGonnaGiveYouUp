@@ -18,5 +18,7 @@ jobs:
               git config --local user.name "风扇滑翔翼"
               git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
               git pull --rebase
-              git commit --allow-empty -m "a commit a day keeps your girlfriend away"
+              for i in $(seq 1 $(( ( RANDOM % 6 ) + 1 ))); do
+                git commit --allow-empty -m "a commit a day keeps your girlfriend away"
+              done
               git push
